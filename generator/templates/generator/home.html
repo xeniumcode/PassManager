@@ -1,0 +1,27 @@
+{% extends 'generator/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1>Welcome to your password manager app</h1>
+                    <h3>Manage your all passwords from one place. Secure, fast and useful.</h3>
+                    <div class="d-md-flex gap-3">
+                        <div class="text-center text-lg-start">
+                            <a class="btn btn-primary" href="/add-password" role="button">Add new password</a>
+                        </div>
+                        <div class="text-center text-lg-start">
+                            <a class="btn btn-primary" href="/manage-passwords" role="button">View All</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img">
+                    <img class="img-fluid" alt="home-img" src={% static '/assets/img/Vault-rafiki.svg' %}>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
